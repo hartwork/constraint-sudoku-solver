@@ -19,6 +19,7 @@ _INDENT = '  '
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--echo', action='store_true', help='dump puzzle about to solve')
     parser.add_argument('--duration', dest='max_runtime_seconds', metavar='SECONDS',
             default=0.1, type=float,
             help='seconds to stop searching for additional solutions after (default: %(default)s)')
@@ -30,8 +31,9 @@ def main():
     puzzle = f.read()
     f.close()
 
-    print('Problem:')
-    print('\n'.join((_INDENT + line for line in puzzle.split('\n'))))
+    if options.echo:
+        print('Problem:')
+        print('\n'.join((_INDENT + line for line in puzzle.split('\n'))))
 
     values_of_colum_of_line = parse_puzzle(puzzle)
     problem = SudokuProblem()
