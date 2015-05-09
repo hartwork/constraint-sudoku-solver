@@ -6,9 +6,7 @@ from __future__ import print_function
 
 import argparse
 import datetime
-import re
 import sys
-from textwrap import dedent
 
 from constraint_sudoku_solver.parser import parse_puzzle
 from constraint_sudoku_solver.problem import SudokuProblem
