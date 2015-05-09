@@ -1,0 +1,6 @@
+#! /usr/bin/env python
+# Copyright (C) 2015 Sebastian Pipping <sebastian@pipping.org>
+# Licensed under AGPL v3 or later
+
+from constraint_sudoku_solver.cli import main
+main()
