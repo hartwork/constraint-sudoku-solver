@@ -50,7 +50,7 @@ def main():
             after_first = now
 
         if (now - before).total_seconds() > options.max_runtime_seconds:
-            print('Timeout atfer %.3f seconds, %s solutions so far' \
+            print('Timeout after %.3f seconds, %s solutions so far' \
                     % (options.max_runtime_seconds, solution_index + 1))
             timed_out = True
             break
