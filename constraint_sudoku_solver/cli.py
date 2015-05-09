@@ -79,7 +79,7 @@ def main():
                 'COULD be' \
                 if timed_out \
                 else 'IS'
-    print('Given problem %s a true Sokudo.' % true_sudoku)
+    print('Given problem %s a true Sudoku.' % true_sudoku)
 
 
 if __name__ == '__main__':
